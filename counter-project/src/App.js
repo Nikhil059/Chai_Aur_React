@@ -9,8 +9,14 @@ const AddValue = () =>{
       setcounterValue(counterValue = 20)
     } 
     else{
-      counterValue = counterValue + 1;
-      setcounterValue(counterValue)
+      // counterValue = counterValue + 1;
+      // counterValue = counterValue + 1;
+      // counterValue = counterValue + 1;
+      setcounterValue(prevCounter => prevCounter + 1)
+      setcounterValue(prevCounter => prevCounter + 1)
+      setcounterValue(prevCounter => prevCounter + 1)
+      // setcounterValue(counterValue + 1)
+      // setcounterValue(counterValue + 1)
   console.log(counterValue);
     }
 }
