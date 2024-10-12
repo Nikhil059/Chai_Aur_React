@@ -14,8 +14,13 @@ function App() {
     if(number) str += "0123456789"
     if(character) str += "!@#$%^&*(){}[]`~-_+="
 
-    
-  },[lenght,number,character,setPassword])
+    for (let i = 0; i < array.length; i++) {
+      let char = Math.floor(Math.random() * str.length + 1)
+
+      pass = str.chatAt(char)
+      
+    }
+  },[length,number,character,setPassword])
   return (
     <>
       <h1 className='text-center text-white text-4xl m-4'>Password Generator</h1>
